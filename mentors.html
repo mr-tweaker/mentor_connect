@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorConnect - Our Mentors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mentors-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mentors">
+            <h1>Our Mentors</h1>
+            <p>Connect with our experienced mentors to accelerate your growth and achieve your goals.</p>
+            
+            <div class="search-filter">
+                <input type="text" id="mentor-search" placeholder="Search mentors by name or expertise">
+                <select id="expertise-filter">
+                    <option value="">All Expertise</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="UX Design">UX Design</option>
+                    <!-- Add more options based on your mentor pool -->
+                </select>
+            </div>
+
+            <div class="mentor-grid">
+                <!-- Mentor cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MentorConnect. All rights reserved.</p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Your Firebase configuration and initialization -->
+    <script src="firebase-config.js"></script>
+
+    <div id="mentor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="mentor-details">
+                <!-- Mentor details will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="mentors-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorConnect - Mentor Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mentor-1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mentor-profile">
+            <div class="profile-header">
+                <img id="mentor-image" src="" alt="Mentor's profile picture">
+                <h1 id="mentor-name"></h1>
+                <p id="mentor-expertise"></p>
+            </div>
+            <div class="profile-content">
+                <div class="bio-section">
+                    <h2>About Me</h2>
+                    <p id="mentor-bio"></p>
+                </div>
+                <div class="experience-section">
+                    <h2>Professional Experience</h2>
+                    <ul id="mentor-experience"></ul>
+                </div>
+                <div class="skills-section">
+                    <h2>Skills & Expertise</h2>
+                    <ul id="mentor-skills"></ul>
+                </div>
+                <div class="education-section">
+                    <h2>Education</h2>
+                    <ul id="mentor-education"></ul>
+                </div>
+                <div class="contact-section">
+                    <h2>Get in Touch</h2>
+                    <p id="mentor-contact"></p>
+                    <button id="schedule-meeting">Schedule a Meeting</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MentorConnect. All rights reserved.</p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="mentor-1.js"></script>
+</body>
+</html>
